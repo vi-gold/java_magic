@@ -1,6 +1,8 @@
 package org.hogwarts;
 
 import org.hogwarts.beast.Hippogriff;
+import org.hogwarts.items.Car;
+import org.hogwarts.items.Cloak;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -152,6 +154,14 @@ public class Main {
         System.out.println("Task 1-2 access");
         Student karl = new Student("Karl", "Slizerin", 19, new String[]{"qwer", "zxcv"});
         System.out.println(happy.giveRide(karl));
+
+        // Interface 1-2
+        System.out.println("Task 1-2 interface");
+        Car car = new Car(karl, 200, true);
+        Cloak cloak = new Cloak(2,4, true);
+        car.checkCar();
+        cloak.checkCloak();
+
     }
 
     public static void castSpell() {
